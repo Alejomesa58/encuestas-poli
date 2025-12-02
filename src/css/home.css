@@ -1,0 +1,66 @@
+body {
+  background: linear-gradient(135deg, #4fc3f7, #9575cd 70%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.hero-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 2.4rem;
+  background: linear-gradient(90deg, #4fc3f7, #9575cd);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: #6b6b6b;
+}
+
+.btn-modern {
+  padding: 1rem 2rem;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-modern:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary-custom {
+  background: linear-gradient(135deg, #9575cd, #4fc3f7);
+  border: none;
+  color: white;
+}
+
+.btn-outline-custom {
+  border: 2px solid #9575cd;
+  color: #9575cd;
+}
+
+.btn-outline-custom:hover {
+  background: #9575cd;
+  color: white;
+}
