@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Reportes de encuestas</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <!-- Iconos -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">Plataforma de Encuestas</a>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <h2 class="mb-3">Reportes de encuestas</h2>
+        <p class="text-muted">
+            Selecciona una encuesta para ver el total de respuestas y un resumen de las últimas.
+        </p>
+
+        <div class="mb-3">
+            <label for="reporte-encuesta-select" class="form-label">Encuesta</label>
+            <select class="form-select" id="reporte-encuesta-select">
+            </select>
+        </div>
+
+        <p id="reporte-sin-encuestas" class="text-muted d-none">
+            No hay encuestas registradas. Crea encuestas desde el módulo de administración.
+        </p>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Resumen</h5>
+                <p class="card-text">
+                    Total de respuestas:
+                    <strong><span id="reporte-total-respuestas">0</span></strong>
+                </p>
+
+                <h6 class="mt-3">Últimas respuestas (máx. 5)</h6>
+                <ul class="list-group" id="reporte-lista-respuestas">
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a
+        href="#"
+        class="whatsapp-float"
+        title="Integración WhatsApp (futuro)"
+    >
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
+
